@@ -10,9 +10,16 @@ public class AutowiredTest {
     @Autowired
     AutowiredService autowiredService2;
 
+    @Autowired
+    AutowiredService autowiredService;
     @Test
     public  void  test01()
     {
         System.out.println(autowiredService2);
+    }
+
+    @Test
+    public  void  testConstructor(){
+        System.out.println(autowiredService);
     }
 }

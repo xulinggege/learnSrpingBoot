@@ -4,7 +4,7 @@ package com.xs.c3_ioc.dao;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
-@Primary
+//@Primary
 @Repository  // 作用等于 @Component
 public class UserDao implements IUserDao {
 

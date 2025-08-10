@@ -37,8 +37,8 @@ public class SpringConfig {
 //        userDao.setUserName("小三");
 //        return userDao;
 //    }
-    @Primary
-    @Bean
+//    @Primary
+//    @Bean
     public IUserService userService2(IUserDao userDao)
     {
         System.out.println("创建了UserService的Bean");
@@ -48,7 +48,7 @@ public class SpringConfig {
         return userService;
     }
 
-    @Bean
+//    @Bean
     public AutowiredTestService autowiredTestService3(IUserService userService){
         System.out.println("创建了AutowiredTestService的Bean");
         AutowiredTestService autowiredTestService =  new AutowiredTestService();
