@@ -6,8 +6,19 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
     // 添加增删改查的方法，并输出增删改查
-    public void add() {
+    public Integer add() {
         System.out.println("添加");
+        int a;
+        try {
+            a = 1/0;
+        }catch (Exception e){
+            System.out.println("异常");
+            throw e;
+
+        }
+
+        return a;
+
     }
     public void delete() {
         System.out.println("删除");
