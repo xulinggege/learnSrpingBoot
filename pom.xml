@@ -12,6 +12,7 @@
         <module>hello</module>
         <module>springboot</module>
         <module>c3_ioc</module>
+        <module>c4_aop</module>
     </modules>
 
     <properties>
