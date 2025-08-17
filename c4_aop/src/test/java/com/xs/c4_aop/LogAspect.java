@@ -3,6 +3,7 @@ package com.xs.c4_aop;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +11,8 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class LogAspect {
+
+
 
     // 记录方法用时时间-- Around 环绕通知 和切点匹配execution
     @Around("execution(* com.xs.c4_aop.UserService.*())")
